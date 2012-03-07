@@ -1,0 +1,7 @@
+C:\dev\cybersource-csharp-wrapper\CybersourceAPI.Tests\bin\Debug\CybersourceAPI.Tests.dll
+C:\dev\cybersource-csharp-wrapper\CybersourceAPI.Tests\bin\Debug\CybersourceAPI.Tests.pdb
+C:\dev\cybersource-csharp-wrapper\CybersourceAPI.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\cybersource-csharp-wrapper\CybersourceAPI.Tests\obj\Debug\CybersourceAPI.Tests.dll
+C:\dev\cybersource-csharp-wrapper\CybersourceAPI.Tests\obj\Debug\CybersourceAPI.Tests.pdb
+C:\dev\cybersource-csharp-wrapper\CybersourceAPI.Tests\bin\Debug\CybersourceAPI.dll
+C:\dev\cybersource-csharp-wrapper\CybersourceAPI.Tests\bin\Debug\CybersourceAPI.pdb

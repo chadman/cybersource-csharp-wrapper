@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ee3b6b64-2b6e-4823-a87c-45dee2bd4121" name="cmeyer@WV00235077 2012-03-06 15:29:30" runUser="ACTIVE\cmeyer" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="c0d642b4-18b8-469e-9a2e-d44259bb5d21">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="cmeyer_WV00235077 2012-03-06 15_29_30">
+      <DeploymentItem filename="C:\dev\cybersource-csharp-wrapper\CybersourceAPI\bin\Debug\CybersourceAPI.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-06T15:29:30.1637448-06:00" queuing="2012-03-06T15:29:31.2673028-06:00" start="2012-03-06T15:29:31.4391844-06:00" finish="2012-03-06T15:30:12.8841352-06:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="WV00235077" outcome="Error" timestamp="2012-03-06T15:30:12.8812054-06:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="single_transaction_get_by_merchant_reference_code" storage="c:\dev\cybersource-csharp-wrapper\cybersourceapi.tests\bin\debug\cybersourceapi.tests.dll" id="4a54d891-f13a-e604-4f0c-fb306a95c15a">
+      <Execution id="71987b24-c412-4a4b-9169-01f0bc92a44c" />
+      <TestMethod codeBase="C:/dev/cybersource-csharp-wrapper/CybersourceAPI.Tests/bin/Debug/CybersourceAPI.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CybersourceAPI.Tests.Integration.SingleTransactionReport, CybersourceAPI.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="single_transaction_get_by_merchant_reference_code" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4a54d891-f13a-e604-4f0c-fb306a95c15a" executionId="71987b24-c412-4a4b-9169-01f0bc92a44c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="71987b24-c412-4a4b-9169-01f0bc92a44c" testId="4a54d891-f13a-e604-4f0c-fb306a95c15a" testName="single_transaction_get_by_merchant_reference_code" computerName="WV00235077" duration="00:00:41.2896714" startTime="2012-03-06T15:29:31.5934872-06:00" endTime="2012-03-06T15:30:12.8831586-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71987b24-c412-4a4b-9169-01f0bc92a44c">
+    </UnitTestResult>
+  </Results>
+</TestRun>
