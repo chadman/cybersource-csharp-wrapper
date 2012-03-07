@@ -1,5 +1,0 @@
-C:\dev\cybersource-csharp-wrapper\CybersourceAPI\obj\Debug\ResolveAssemblyReference.cache
-C:\dev\cybersource-csharp-wrapper\CybersourceAPI\bin\Debug\CybersourceAPI.dll
-C:\dev\cybersource-csharp-wrapper\CybersourceAPI\bin\Debug\CybersourceAPI.pdb
-C:\dev\cybersource-csharp-wrapper\CybersourceAPI\obj\Debug\CybersourceAPI.dll
-C:\dev\cybersource-csharp-wrapper\CybersourceAPI\obj\Debug\CybersourceAPI.pdb
