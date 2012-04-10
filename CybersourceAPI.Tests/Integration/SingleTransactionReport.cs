@@ -16,6 +16,11 @@ namespace CybersourceAPI.Tests.Integration {
         public string MerchantID = "";
         public string RequestID = "";
 
+        // Variables set up for the test environment
+        public string TestUsername = "";
+        public string TestPassword = "";
+        public string TestMerchantID = "";
+
 
         [TestMethod]
         public void single_transaction_error_no_merchant_id() {
@@ -90,6 +95,23 @@ namespace CybersourceAPI.Tests.Integration {
             qo.Password = this.Password;
 
             Assert.IsNotNull(CybersourceAPI.Reports.OnDemand.SingleTransaction.GetSingleTransaction(qo));
+        }
+
+        [TestMethod]
+        public void single_transaction_get_by_merchant_reference_code_for_test() {
+
+            SingleTransactionQO qo = new SingleTransactionQO();
+            qo.IsTestEnvironment = true;
+            qo.MerchantID = this.TestMerchantID;
+            qo.MerchantReferenceNumber = "";
+            qo.TargetDate = new DateTime(2012, 4, 10);
+            qo.Username = this.TestUsername;
+            qo.Password = this.TestPassword;
+
+            Report report = CybersourceAPI.Reports.OnDemand.SingleTransaction.GetSingleTransaction(qo);
+
+            Assert.IsNotNull(report);
+
         }
     }
 }

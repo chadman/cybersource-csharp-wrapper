@@ -25,6 +25,11 @@ namespace CybersourceAPI.QueryObject {
         /// </summary>
         public string Password { get; set; }
 
+        /// <summary>
+        /// Determine if the resource should be called in the test environment or the live environement
+        /// </summary>
+        public bool IsTestEnvironment { get; set; }
+
         #endregion Public Properties
 
         #region Private Methods

@@ -19,7 +19,7 @@ namespace CybersourceAPI.Reports.OnDemand {
         public static CybersourceAPI.Model.Report GetSingleTransaction(CybersourceAPI.QueryObject.SingleTransactionQO qo) {
 
             // Single transaction URL
-            string url = string.Format("https://ebc.cybersource.com/ebc/Query");
+            string url = qo.IsTestEnvironment ? @"https://ebctest.cybersource.com/ebctest/Query" : string.Format("https://ebc.cybersource.com/ebc/Query");
 
             // There are a few things that are reequired in order to call Cybersource API
             /// First is the merchant is always required.
@@ -38,7 +38,21 @@ namespace CybersourceAPI.Reports.OnDemand {
                 }
             }
 
-            return Serialization.DeserializeFromXmlString<CybersourceAPI.Model.Report>(Call(url, qo));
+
+            string replyXML = Call(url, qo);
+            string docType = "";
+            string xmlns = "";
+
+            docType = replyXML.Substring(replyXML.IndexOf("<!DOCTYPE"));
+            docType = docType.Substring(0, docType.IndexOf(">") + 1);
+
+            xmlns = replyXML.Substring(replyXML.IndexOf("xmlns"));
+            xmlns = xmlns.Substring(0, xmlns.IndexOf("\" ") + 1);
+
+            replyXML = replyXML.Replace(docType, "");
+            replyXML = replyXML.Replace(xmlns, "");
+
+            return Serialization.DeserializeFromXmlString<CybersourceAPI.Model.Report>(replyXML);
         }
     }
 }

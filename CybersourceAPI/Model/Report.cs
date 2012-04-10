@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace CybersourceAPI.Model {
 
-    [XmlRoot("Report", Namespace="https://ebc.cybersource.com/ebc/reports/dtd/tdr_1_8.dtd"), XmlType("Report")]
+    [XmlRoot("Report"), XmlType("Report")]
     public class Report {
 
         #region Private Properties
